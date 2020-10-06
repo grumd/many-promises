@@ -18,11 +18,18 @@ const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const job = (item) => Promise.resolve(item * 2);
 
-const results = await execute({ items, job, concurrentLimit: 3, minJobTime: 100 });
+const results = await execute({ items, job });
 // Will call `job` for every `item` in `items` and await until all promises are resolved.
-// concurrentLimit - Maximum of 3 promises can be in progress at a time.
-// minJobTime - If a job finishes faster than 100ms, next job will only start when 100ms pass since previous job started.
 // results - [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+```
+
+```js
+// All promises in parallel:
+const results = await execute({ items, job });
+// All promises sequentially:
+const results = await execute({ items, job, concurrentLimit: 1 });
+// Maximum 3 jobs at the same time, but each job has a minimum 200ms duration:
+const results = await execute({ items, job, concurrentLimit: 3, minJobTime: 200 });
 ```
 
 ## Reference
