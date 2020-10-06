@@ -1,0 +1,55 @@
+{
+  "name": "many-promises",
+  "version": "0.1.0",
+  "description": "Tool for managing sequential, parallel and a mix of those calculations using Promises in Javascript",
+  "main": "index.ts",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "test": "npm run lint && npm run typecheck && jest --config jestconfig.json",
+    "lint": "eslint ./src ./tests --ext .ts",
+    "prepublishOnly": "npm run test && npm run build",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "preversion": "npm run test",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grumd/many-promises.git"
+  },
+  "files": [
+    "lib/**/*",
+    "src/**/*"
+  ],
+  "keywords": [
+    "promise",
+    "promises",
+    "mass",
+    "multiple",
+    "parallel",
+    "sequential",
+    "scheduler",
+    "simultaneous",
+    "jobs",
+    "array"
+  ],
+  "author": "grumd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grumd/many-promises/issues"
+  },
+  "homepage": "https://github.com/grumd/many-promises#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.5.2",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
+  }
+}
