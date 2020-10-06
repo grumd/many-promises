@@ -1,5 +1,5 @@
 # many-promises
-[![npm version](https://badge.fury.io/js/many-promises.svg)](https://badge.fury.io/js/many-promises) ![](https://travis-ci.org/grumd/many-promises.svg?branch=main) 
+[![npm version](https://img.shields.io/npm/v/many-promises.svg)](https://www.npmjs.com/package/many-promises) ![](https://travis-ci.org/grumd/many-promises.svg?branch=main) 
 
 **many-promises** allows sequential or parallel promise evaluation, including limiting number of promises that can be in progress at the same time. Includes Typescript typings, but can be used in Javascript projects as well.
 
