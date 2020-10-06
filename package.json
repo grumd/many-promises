@@ -1,6 +1,6 @@
 {
   "name": "many-promises",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tool for managing sequential, parallel and a mix of those calculations using Promises in Javascript",
   "main": "index.ts",
   "scripts": {
