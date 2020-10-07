@@ -1,5 +1,5 @@
 # many-promises
-[![npm version](https://img.shields.io/npm/v/many-promises.svg)](https://www.npmjs.com/package/many-promises) ![](https://travis-ci.org/grumd/many-promises.svg?branch=main) 
+[![npm version](https://img.shields.io/npm/v/many-promises.svg)](https://www.npmjs.com/package/many-promises) [![](https://travis-ci.org/grumd/many-promises.svg?branch=main)](https://travis-ci.org/github/grumd/many-promises) [![](https://img.shields.io/codecov/c/github/grumd/many-promises)](https://codecov.io/gh/grumd/many-promises)
 
 **many-promises** allows sequential or parallel promise evaluation, including limiting number of promises that can be in progress at the same time. Includes Typescript typings, but can be used in Javascript projects as well.
 
