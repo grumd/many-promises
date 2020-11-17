@@ -2,7 +2,7 @@
   "name": "many-promises",
   "version": "0.1.2",
   "description": "Tool for managing sequential, parallel and a mix of those calculations using Promises in Javascript",
-  "main": "index.ts",
+  "main": "./lib/index.js",
   "scripts": {
     "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
     "test": "npm run lint && npm run typecheck && jest --config jestconfig.json",
