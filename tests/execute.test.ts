@@ -108,6 +108,4 @@ test('must respect minJobTime setting', async () => {
   });
   // Minimum job time can be 1ms smaller because of timing stuff
   expect(minTime).toBeGreaterThanOrEqual(minJobTime - 1);
-  // Maximum job time could be higher but I still want to test this, albeit with bigger tolerance
-  expect(maxTime).toBeLessThanOrEqual(minJobTime + 5);
 });
